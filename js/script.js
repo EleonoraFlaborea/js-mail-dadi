@@ -1,8 +1,6 @@
 /*Ciao ragazzi,
-esercizio di oggi: Gioco dei dadi e Finta Login
-Nome repo: js-mail-dadi
-Oggi due esercizi al prezzo di uno, perchè "a Natale a Natale  si può fare di piùùùùù" :christmasparrot2::note:
-Potete svolgere entrambi gli esercizi in un unico file HTML e JS, se la cosa vi confonde, separateli, purchè siano sulla stessa repo.
+
+
 ESERCIZIO 1 - Gioco dei dadi
 Generare un numero random da 1 a 6, sia per il giocatore sia per il computer.
 Stabilire il vincitore, in base a chi fa il punteggio più alto.
@@ -17,3 +15,45 @@ Consigli del giorno:
 6. Il tuo codice ti sembra troppo complicato? probabilmente ti stai complicando la vita!*/
 
 console.log('JS OK');
+
+// 1: Recuperare elementi dalla pagina    
+// 2: Dichiarare una variabile dado 1 e dado 2
+// 3: generare numero random x2, da 1-6
+// 4: stamapre in pagina
+
+const numbersLeft = document.getElementById('numbers-left')
+const numbersRight = document.getElementById('numbers-right')
+
+const btnRight = document.getElementById('btn-right')
+const btnLeft = document.getElementById('btn-left')
+
+// left
+let valueLeft = [];
+
+btnLeft.addEventListener('click', function (){
+    //genero numero casuale
+    const randomNumber = Math.floor(Math.random () * 6) +1;
+    valueLeft.push(randomNumber);
+    console.log(valueLeft)
+    
+    numbersLeft.append('Il numero è: ');
+
+    
+})
+
+numbersLeft.innerText += valueLeft;
+//numbersLeft.appendChild(valueLeft);
+
+
+// right
+//let valueRight = '';
+
+//numbersRight.innerText += numbers;
+
+
+
+
+
+
+
+

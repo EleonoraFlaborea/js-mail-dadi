@@ -1,0 +1,15 @@
+#player-right{
+    color: white;
+    background-color: rgb(38, 147, 38);
+    min-height: 300px;
+    min-width: 400px;
+    padding: 15px;
+}
+
+#player-left{
+    color: white;
+    background-color: rgb(209, 71, 71);
+    min-height: 300px;
+    min-width: 400px;
+    padding: 15px;
+}
